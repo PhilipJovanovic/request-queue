@@ -8,7 +8,6 @@ reqQ.add({
     }
 }) // executes request without response handling
 
-
 function handleResponse(err, req, body) {
     console.log(body)
 }

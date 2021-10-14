@@ -1,4 +1,4 @@
-# request queue
+# req queue
  NodeJs + Request.js based request queue
 
 
@@ -11,7 +11,7 @@ npm i request-queue
 ## Usage
 
 ```js
-const RequestQueue = require('request-queue')
+const RequestQueue = require('req-queue')
 
 const reqQ = new RequestQueue(2000, true) // init queue with 2 sec delay on each request and debug on
 
@@ -20,7 +20,6 @@ reqQ.add({
         url: 'https://jsonplaceholder.typicode.com/todos/1' 
     }
 }) // executes request without response handling
-
 
 function handleResponse(err, req, body) {
     console.log(body)
