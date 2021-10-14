@@ -13,7 +13,7 @@ npm i request-queue
 ```js
 const RequestQueue = require('request-queue')
 
-const reqQ = new RequestQueue(2000) // init queue with 2 sec delay on each request
+const reqQ = new RequestQueue(2000, true) // init queue with 2 sec delay on each request and debug on
 
 reqQ.add({
     request: {
@@ -38,14 +38,14 @@ reqQ.add({
 ## Output
 
 ```
-Add Adding new request [GET https://jsonplaceholder.typicode.com/todos/1]
-Check Routine offline, starting...
-Add Adding new request [GET https://jsonplaceholder.typicode.com/todos/1]
-Interval New interval check
-Send Sending GET https://jsonplaceholder.typicode.com/todos/1
-Interval New interval check
-Send Sending GET https://jsonplaceholder.typicode.com/todos/1
-Clear Queue empty, stopping routine
+2021-10-14T09:44:45.794Z Add Adding new request [GET https://jsonplaceholder.typicode.com/todos/1]
+2021-10-14T09:44:45.799Z Check Routine offline, starting...
+2021-10-14T09:44:45.800Z Add Adding new request [GET https://jsonplaceholder.typicode.com/todos/1]
+2021-10-14T09:44:47.802Z Interval New interval check
+2021-10-14T09:44:47.802Z Send Sending GET https://jsonplaceholder.typicode.com/todos/1
+2021-10-14T09:44:49.807Z Interval New interval check
+2021-10-14T09:44:49.807Z Send Sending GET https://jsonplaceholder.typicode.com/todos/1
+2021-10-14T09:44:49.809Z Clear Queue empty, stopping routine
 {
   "userId": 1,
   "id": 1,

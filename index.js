@@ -74,7 +74,7 @@ class RequestQueue {
      */
     debugLog(step, data) {
         if(this.debug)
-            console.log(`${chalk.green(step)} ${chalk.cyan(data)}`)
+            console.log(`${new Date().toISOString()} ${chalk.green(step)} ${chalk.cyan(data)}`)
     }
 }
 
