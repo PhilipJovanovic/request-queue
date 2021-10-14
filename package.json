@@ -1,0 +1,20 @@
+{
+  "name": "request-queue",
+  "version": "1.0.0",
+  "description": "NodeJS + Request.js request queue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "request",
+    "queue",
+    "nodejs"
+  ],
+  "author": "Philip Jovanovic",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "request": "^2.88.2"
+  }
+}
