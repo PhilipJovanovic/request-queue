@@ -3,15 +3,26 @@ const chalk = require('chalk')
 
 class RequestQueue {
     /**
-     * 
+     * Initialize Queue Object
      * @param {*} delay delay between requests (in ms)
      */
     constructor(delay, debug) {
         this.queue = []
         this.routineActive = false
-        this.delay = typeof parseInt(delay) == 'number' && parseInt(delay) >= 0 ? parseInt(delay) : 1000
         this.debug = debug || false
+
+        this.changeDelay(delay)
+
+        /* Helper function */
         this.sleep = ms => new Promise(resolve => setTimeout(resolve), ms)
+    }
+
+    /**
+     * Change delay between requests
+     * @param {*} delay between requests in ms
+     */
+    changeDelay(delay) {
+        this.delay = typeof parseInt(delay) == 'number' && parseInt(delay) >= 0 ? parseInt(delay) : 1000
     }
     
     /**
