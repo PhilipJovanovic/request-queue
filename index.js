@@ -9,7 +9,7 @@ class RequestQueue {
     constructor(delay, debug) {
         this.queue = []
         this.routineActive = false
-        this.delay = delay || 1000
+        this.delay = typeof parseInt(delay) == 'number' && parseInt(delay) >= 0 ? parseInt(delay) : 1000
         this.debug = debug || false
         this.sleep = ms => new Promise(resolve => setTimeout(resolve), ms)
     }

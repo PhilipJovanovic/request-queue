@@ -11,6 +11,9 @@
     "queue",
     "nodejs"
   ],
+  "repository": {
+    "url": "https://github.com/PhilipJovanovic/request-queue"
+  },
   "author": "PhilipJovanovic",
   "license": "MIT",
   "dependencies": {
