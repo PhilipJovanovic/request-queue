@@ -37,15 +37,15 @@ reqQ.add({
 
 ## Output
 
-```
-2021-10-14T09:44:45.794Z Add Adding new request [GET https://jsonplaceholder.typicode.com/todos/1]
-2021-10-14T09:44:45.799Z Check Routine offline, starting...
-2021-10-14T09:44:45.800Z Add Adding new request [GET https://jsonplaceholder.typicode.com/todos/1]
-2021-10-14T09:44:47.802Z Interval New interval check
-2021-10-14T09:44:47.802Z Send Sending GET https://jsonplaceholder.typicode.com/todos/1
-2021-10-14T09:44:49.807Z Interval New interval check
-2021-10-14T09:44:49.807Z Send Sending GET https://jsonplaceholder.typicode.com/todos/1
-2021-10-14T09:44:49.809Z Clear Queue empty, stopping routine
+```md
+2021-10-14T09:46:14.639Z [Add]: 	Adding new request [GET https://jsonplaceholder.typicode.com/todos/1]
+2021-10-14T09:46:14.643Z [Check]: 	Routine offline, starting...
+2021-10-14T09:46:14.643Z [Add]: 	Adding new request [GET https://jsonplaceholder.typicode.com/todos/1]
+2021-10-14T09:46:16.647Z [Interval]: 	New interval check
+2021-10-14T09:46:16.647Z [Send]: 	Sending GET https://jsonplaceholder.typicode.com/todos/1
+2021-10-14T09:46:18.651Z [Interval]: 	New interval check
+2021-10-14T09:46:18.651Z [Send]: 	Sending GET https://jsonplaceholder.typicode.com/todos/1
+2021-10-14T09:46:18.653Z [Clear]: 	Queue empty, stopping routine
 {
   "userId": 1,
   "id": 1,
